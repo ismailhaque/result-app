@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>result app </title>
+	<title>Result app </title>
 	<!-- ALL CSS FILES  -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -16,6 +16,7 @@
 					<div lass="card-header">
 						<div class="card-body">
 							<h2>Add new Student</h2>
+							<p class="a-massage alert-danger"></p>
 						<form action="" id="student_form">
 							<div class="form-group mb-3">								
 								<input class="form-control" type="text" placeholder="Student Name">								
@@ -33,7 +34,7 @@
 								<input name="gender" type="radio" value="Male" id="male"><label for="male">Male</label>							
 								<input name="gender" type="radio" value="Female" id="female"><label for="female">Female</label>					
 							</div>
-							Marks
+							<h1>Marks</h1>
 								<hr>
 							<div class="form-group mb-3">								
 								<input class="form-control" type="text" placeholder="Bangla">								
@@ -64,7 +65,7 @@
 			 <div class="col-md-9">
 				 <div class="card">
 					 <div class="card-body">
-						 <table class="table table-striped">
+						 <table class="table table-dark table-hover table-bordered">
 							 <thead>
 								 <tr>
 									 <th>#</th>
@@ -89,6 +90,49 @@
 		 </div>
 	 </div>
 
+	 <!-- delet student -->
+	 <div class="delet-data">
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Delete Student Data</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+					<p>Are you sure</p>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" id="deletConf" data-bs-dismiss="modal" class="btn btn-primary">Confirm</button>
+					</div>
+				</div>
+				</div>
+			</div>
+
+			<!-- viwe student data -->
+			<div class="viwe-data">
+				<!-- Modal -->
+				<div class="modal fade" id="student_single_modal">
+					<div class="modal-dialog modal-dialog-centered modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<div class="student-result-data">
+									
+								</div>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+			
+			</div>
+	 </div>
 
 
 

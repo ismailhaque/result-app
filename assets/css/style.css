@@ -10,5 +10,21 @@
 body {
 	background-color: #e9e9e9;
 }
+.v-body{
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+}
+.v-img{
+	flex-basis: 55%;
+}
+.v-img img{
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+}
+.v-contant{
+	flex-basis: 40%;
+}
 
 
